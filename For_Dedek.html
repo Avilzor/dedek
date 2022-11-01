@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Mase</title>
+</head>
+<form name="contact" method="POST" data-netlify="true">
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            background-image: url(Keren.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            justify-content: center;
+            animation: kotakchange 3s ease-in-out infinite;
+            transition: all 500ms linear;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            box-shadow: 10px 10px 0 0 grey;
+            /*transform: rotate(50deg);*/
+            transition: all 500ms linear;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            color: white;
+            background-color: purple;
+        }
+
+        .blue {
+            background: blue;
+            color: white;
+            font-size: large;
+        }
+
+        .pink {
+            background: pink;
+            font-size: 70pt;
+        }
+
+        .red {
+            background: red;
+            color: white;
+            font-size: large;
+        }
+
+        @keyframes kotakchange {
+            from {
+                flex-direction: column;
+            }
+
+            to {
+                flex-direction: row;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="box blue">
+                <h2>Mase Aziz</h2>
+            </div>
+            <div class="box pink">
+                <h2>💗</h2>
+            </div>
+            <div class="box red">
+                <h2>Dedek Salma</h2>
+            </div>
+        </div>
+    </body>
+</form>
+
+Aziz_krt_17_02
+</html>
